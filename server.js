@@ -4,7 +4,7 @@ console.log("Yes, you are in!");
 const express = require("express");
 const app = express();
 
-app.listen(5000, function () {
+app.listen(process.env.PORT || 5000, "0.0.0.0", () => {
   console.log("My server is listening on 5000");
 });
 
